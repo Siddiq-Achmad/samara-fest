@@ -38,9 +38,11 @@ export function SponsorsSection() {
           <div className="flex space-x-12 animate-marquee">
             {[...sponsors, ...sponsors].map((sponsor, index) => (
               <div key={index} className="flex-shrink-0">
-                <img
+                <Image
                   src={sponsor.logo}
                   alt={sponsor.name}
+                  width={400}
+                  height={300}
                   className="h-24 object-contain"
                 />
               </div>

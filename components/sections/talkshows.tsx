@@ -26,7 +26,7 @@ const talkshows = [
 
 export function TalkshowsSection() {
   return (
-    <section className="py-20 px-6">
+    <section className="py-20 px-6 min-h-[60vh] mx-auto">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12">
           Featured Talkshows
@@ -39,9 +39,11 @@ export function TalkshowsSection() {
               </AccordionTrigger>
               <AccordionContent>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <img
+                  <Image
                     src={talk.image}
                     alt={talk.title}
+                    width={400}
+                    height={300}
                     className="rounded-lg"
                   />
                   <div className="space-y-4">

@@ -47,9 +47,11 @@ export function VendorsSection() {
             <HoverCard key={index}>
               <HoverCardTrigger>
                 <Card className="overflow-hidden">
-                  <img
+                  <Image
                     src={vendor.image}
                     alt={vendor.name}
+                    width={400}
+                    height={300}
                     className="w-full h-48 object-cover"
                   />
                   <div className="p-4">

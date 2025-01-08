@@ -1,4 +1,4 @@
-// @ts-nocheck
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useEffect, useId, useState } from "react";
@@ -20,7 +20,7 @@ interface SparklesProps {
   mousemove?: boolean;
   hover?: boolean;
   background?: string;
-  options?: Record<string, any>; // Adjust type as needed based on `options` structure
+  options?: any; // Adjust type as needed based on `options` structure
 }
 
 export function Sparkles({
@@ -38,7 +38,6 @@ export function Sparkles({
   mousemove = false,
   hover = false,
   background = "transparent",
-  options = {},
 }: SparklesProps) {
   const [isReady, setIsReady] = useState(false);
 
@@ -51,7 +50,7 @@ export function Sparkles({
   }, []);
 
   const id = useId();
-  const defaultOptions = {
+  const defaultOptions: any = {
     background: {
       color: {
         value: background,

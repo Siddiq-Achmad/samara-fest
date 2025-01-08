@@ -1,4 +1,5 @@
 import { AboutSection } from "@/components/sections/about";
+import GallerySection from "@/components/sections/gallery";
 import { HeroSection } from "@/components/sections/hero";
 import { MediaPartnerSection } from "@/components/sections/mediapartner";
 import { TalkshowsSection } from "@/components/sections/talkshows";
@@ -15,6 +16,8 @@ export default function Home() {
       <MediaPartnerSection />
 
       <TalkshowsSection />
+
+      <GallerySection />
 
       <VendorsSection />
     </div>
