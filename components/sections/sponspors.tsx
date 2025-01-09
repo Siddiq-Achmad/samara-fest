@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 import {
@@ -47,13 +46,6 @@ export function SponsorsSection() {
                 key={index}
                 className="flex-shrink-0 justify-between items-center"
               >
-                {/* <Image
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  width={200}
-                  height={200}
-                  className="h-24 object-contain"
-                /> */}
                 <figure className=" h-20">{sponsor.logo}</figure>
                 <p className="text-center mt-2">{sponsor.name}</p>
               </div>
