@@ -64,6 +64,14 @@ body {
   }
 }
 
+.font-jakarta {
+  font-family: var(--font-jakarta);
+}
+
+.font-decorative {
+  font-family: var(--font-decorative);
+}
+
 @layer base {
   * {
     @apply border-border;

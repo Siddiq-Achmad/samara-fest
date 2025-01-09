@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
+import {
+  Plus_Jakarta_Sans,
+  Space_Grotesk,
+  Cinzel_Decorative,
+} from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
@@ -12,6 +16,12 @@ const jakartaSans = Plus_Jakarta_Sans({
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space",
   subsets: ["latin"],
+});
+
+const decorative = Cinzel_Decorative({
+  variable: "--font-decorative",
+  subsets: ["latin"],
+  weight: ["400", "700", "900"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${jakartaSans.variable} ${spaceGrotesk.variable} antialiased`}
+        className={`${jakartaSans.variable} ${spaceGrotesk.variable} ${decorative.variable} antialiased`}
       >
         <Header />
         {children}

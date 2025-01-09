@@ -8,7 +8,7 @@ import { VendorsSection } from "@/components/sections/vendors";
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <div className="absolute inset-0 -z-10 h-full  w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#FF5A00_80%)]"></div>
+      <div className="absolute inset-0 -z-10 h-full  w-full bg-neutral-200 text-neutral-700 [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#d08274_100%)]"></div>
       <HeroSection />
 
       <AboutSection />

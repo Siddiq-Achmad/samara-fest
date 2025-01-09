@@ -2,8 +2,8 @@ import { Calendar, MapPin, Users } from "lucide-react";
 
 export function AboutSection() {
   return (
-    <section className="py-20 px-6 bg-white">
-      <div className="max-w-4xl mx-auto text-center">
+    <section id="about" className="py-20 px-6 bg-white min-h-[60vh]">
+      <div className="max-w-4xl mx-auto text-center ">
         <h2 className="text-4xl font-bold mb-8">About The Event</h2>
         <p className="text-lg text-gray-600 mb-12">
           Join us at Samara Fest 2024, the most prestigious wedding exhibition

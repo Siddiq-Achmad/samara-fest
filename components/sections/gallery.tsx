@@ -11,17 +11,23 @@ function GallerySection() {
 
   return (
     <>
-      <div className="container mx-auto sm:p-4 px-0  ">
-        <h2 className="text-4xl font-bold text-center mb-12">Gallery</h2>
-        <div className="columns-2 md:columns-3 2xl:columns-4 gap-4">
-          <>
-            {items.slice(5, 14)?.map((item) => (
-              <ImageItem key={item.id} item={item} setSelected={setSelected} />
-            ))}
-          </>
+      <section id="gallery" className="mb-4">
+        <div className="container mx-auto sm:p-4 px-0  ">
+          <h2 className="text-4xl font-bold text-center mb-12">Gallery</h2>
+          <div className="columns-2 md:columns-3 2xl:columns-4 gap-4">
+            <>
+              {items.slice(5, 14)?.map((item) => (
+                <ImageItem
+                  key={item.id}
+                  item={item}
+                  setSelected={setSelected}
+                />
+              ))}
+            </>
+          </div>
         </div>
-      </div>
-      <Modal selected={selected} setSelected={setSelected} />
+        <Modal selected={selected} setSelected={setSelected} />
+      </section>
     </>
   );
 }
