@@ -18,9 +18,44 @@ const talkshows = [
   {
     title: "Planning Your Dream Wedding",
     speaker: "Michael Chen",
-    date: "Day 2 - 2:00 PM",
+    date: "Day 1 - 2:00 PM",
     image:
       "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&h=400&fit=crop",
+  },
+  {
+    title: "Decorating for the Perfect Wedding",
+    speaker: "Sophia Lee",
+    date: "Day 2 - 5:00 PM",
+    image:
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=400&fit=crop",
+  },
+  {
+    title: "Wedding Photography Tips",
+    speaker: "Done Doe",
+    date: "Day 2 - 7:00 PM",
+    image:
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=400&fit=crop",
+  },
+  {
+    title: "Wedding Photography Business",
+    speaker: "Kano Kano",
+    date: "Day 2 - 7:00 PM",
+    image:
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=400&fit=crop",
+  },
+  {
+    title: "Wedding Photography Tips",
+    speaker: "James Kim",
+    date: "Day 3 - 7:00 PM",
+    image:
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=400&fit=crop",
+  },
+  {
+    title: "Wedding Photography Business",
+    speaker: "Jhone Doe",
+    date: "Day 3 - 10:00 PM",
+    image:
+      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=400&fit=crop",
   },
 ];
 

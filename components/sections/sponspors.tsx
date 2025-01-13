@@ -28,7 +28,7 @@ const sponsors = [
 
 export function SponsorsSection() {
   return (
-    <section id="sponsors" className="py-16">
+    <section id="sponsors" className="py-16 md:py-24">
       <motion.div
         initial={{ opacity: 0, y: 200 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +46,7 @@ export function SponsorsSection() {
                 key={index}
                 className="flex-shrink-0 justify-between items-center"
               >
-                <figure className=" h-20">{sponsor.logo}</figure>
+                <figure className="h-16 md:h-24">{sponsor.logo}</figure>
                 <p className="text-center mt-2">{sponsor.name}</p>
               </div>
             ))}

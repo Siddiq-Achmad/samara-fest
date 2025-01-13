@@ -33,6 +33,30 @@ const vendors = [
     image:
       "https://images.unsplash.com/photo-1502759683299-cdcd6974244f?w=400&h=300&fit=crop",
   },
+  {
+    name: "Elegant Dresses",
+    category: "Fashion",
+    image:
+      "https://images.unsplash.com/photo-1594552072238-b8a33785b261?w=400&h=300&fit=crop",
+  },
+  {
+    name: "Done Photography",
+    category: "Photography",
+    image:
+      "https://images.unsplash.com/photo-1502759683299-cdcd6974244f?w=400&h=300&fit=crop",
+  },
+  {
+    name: "Trya Decorations",
+    category: "Decoration",
+    image:
+      "https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=400&h=300&fit=crop",
+  },
+  {
+    name: "Sweet Delights",
+    category: "Cake & Bakery",
+    image:
+      "https://images.unsplash.com/photo-1560180474-e8563fd75bab?w=400&h=300&fit=crop",
+  },
 ];
 
 export function VendorsSection() {
@@ -42,7 +66,7 @@ export function VendorsSection() {
         <h2 className="text-4xl font-bold text-center mb-12">
           Featured Vendors
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8container">
           {vendors.map((vendor, index) => (
             <HoverCard key={index}>
               <HoverCardTrigger>
